@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Health Companion</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Health Companion</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <button onclick="showChat()"><i class="fas fa-comments"></i> Chat</button>
+                <button onclick="showSymptoms()"><i class="fas fa-stethoscope"></i> Symptom Checker</button>
+                <button onclick="showArticles()"><i class="fas fa-newspaper"></i> Health Articles</button>
+                <button onclick="showContacts()"><i class="fas fa-ambulance"></i> Emergency</button>
+                <button onclick="showAppointments()"><i class="fas fa-calendar-alt"></i> Book Appointment</button>
+                <button onclick="clearHistory()"><i class="fas fa-history"></i> Clear History</button>
+            </nav>
+            <div id="questions-list" class="questions-list"></div>
+            <div class="sidebar-footer">
+                <button id="theme-toggle"><i class="fas fa-sun"></i></button>
+            </div>
+        </aside>
+        <main class="main-content">
+            <div id="chat-section" class="chat-section">
+                <div id="chat-box" class="chat-box"></div>
+                <div class="input-area">
+                    <input type="text" id="user-input" placeholder="Type your message...">
+                    <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div id="feature-content" class="feature-content"></div>
+            <div id="appointment-section" class="appointment-section" style="display: none;">
+                <h2>Book Appointment</h2>
+                <div id="appointment-form">
+                    <input type="text" id="appointment-name" placeholder="Name">
+                    <input type="date" id="appointment-date">
+                    <input type="time" id="appointment-time">
+                    <button id="book-appointment-button">Book</button>
+                </div>
+                <div id="booked-appointments">
+                    <h3>Booked Appointments</h3>
+                    <ul id="appointments-list"></ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

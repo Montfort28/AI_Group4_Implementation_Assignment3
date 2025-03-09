@@ -1,0 +1,24 @@
+{
+    "Common Cold": ["runny nose", "sneezing", "mild cough"],
+    "Flu": ["fever", "body aches", "fatigue"],
+    "COVID-19": ["loss of taste", "dry cough", "shortness of breath"],
+    "Migraine": ["nausea", "headache", "sensitivity to light"],
+    "Allergies": ["itchy eyes", "sneezing", "watery eyes"],
+    "Food Poisoning": ["vomiting", "diarrhea", "stomach cramps"],
+    "Bronchitis": ["wheezing", "persistent cough", "chest congestion"],
+    "Sinus Infection": ["nasal congestion", "facial pain", "headache"],
+    "Strep Throat": ["sore throat", "fever", "swollen glands"],
+    "Urinary Tract Infection": ["burning sensation", "frequent urination", "lower abdominal pain"],
+    "Pneumonia": ["shortness of breath", "chest pain", "high fever"],
+    "Anxiety": ["rapid heartbeat", "restlessness", "difficulty concentrating"],
+    "Muscle Strain": ["muscle pain", "swelling", "limited movement"],
+    "Heartburn": ["chest pain", "burning sensation", "acid reflux"],
+    "Ear Infection": ["ear pain", "fever", "fluid discharge"],
+    "Conjunctivitis": ["red eyes", "itching", "discharge"],
+    "Dehydration": ["dizziness", "dry mouth", "dark urine"],
+    "General Questions": {
+        "What is a fever?": "A fever is a temporary increase in your body temperature, often due to an illness.",
+        "How do I treat a cold?": "Rest, drink fluids, and use over-the-counter medications to relieve symptoms.",
+        "What are the symptoms of COVID-19?": "Symptoms include fever, cough, loss of taste or smell, and fatigue."
+    }
+}
